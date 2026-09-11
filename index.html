@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="blocker"></div>  <!--Hides the page-->
+
+<div class="Devtools">
+    <button id="test" onclick="hide()">Hide blocker</button> <!--Test button to hide the blocker-->
+    <button>2</button>
+</div>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi harum autem libero eius! Sunt dolorum ea nam totam laborum assumenda quidem nesciunt eius quod. Suscipit alias quisquam quod officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aspernatur dignissimos quibusdam deserunt corporis inventore consequuntur, tenetur blanditiis ducimus adipisci asperiores debitis sint mollitia hic aperiam, optio reprehenderit fugit ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quia saepe itaque voluptates dolores recusandae unde molestias quidem ea neque. Quo error rerum officiis incidunt repellat blanditiis facilis magni et.</p>
+
+</body>
+
+<script>
+
+function hide() {
+  const box = document.getElementById("blocker");
+  if (box) {
+    box.style.display = (box.style.display === "none") ? "block" : "none";
+  }
+}
+
+const box = document.getElementById("blocker");
+const password = "2030"
+let password2 = prompt("What's the password")
+
+if (password == password2) {
+    alert("correct");
+    box.style.display = (box.style.display === "none") ? "block" : "none";
+} else {
+    alert("Refresh to try again")
+}
+
+
+
+</script>
+
+</html>
